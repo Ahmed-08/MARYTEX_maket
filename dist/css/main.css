@@ -1,0 +1,444 @@
+header {
+  width: 100%;
+  background: linear-gradient(#FFFFFF, #9198e5);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+}
+header #smoke {
+  position: absolute;
+}
+header .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 100%;
+  padding: 15px 100px;
+}
+header .header .logo .name {
+  font-size: 40px;
+  font-family: "Century Gothic";
+  color: #FF9100;
+  font-weight: 900;
+}
+header .header .logo .name span {
+  text-decoration: underline;
+}
+header .header .logo .desc {
+  font-size: 15px;
+  font-family: "Century Gothic";
+  color: #000000;
+  font-weight: 500;
+}
+header .header .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+header .header .contact .net {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .header .contact .net .telegram, header .header .contact .net .whatapp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .header .contact .phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+header .header ul {
+  z-index: 100;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .header ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Tilda Sans";
+  color: #484141;
+  font-weight: 600;
+}
+header .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 90px;
+}
+header .line .hr {
+  width: 90%;
+  height: 100%;
+  background-color: #000000;
+  margin: 0 auto;
+}
+header .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  top: 200px;
+  width: 100%;
+}
+header .title .context {
+  width: 777px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+header .title .context .h-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  font-size: 25px;
+  font-family: "Days One";
+  color: #484141;
+  font-weight: 400;
+}
+header .title .context .h-1 h1:first-child {
+  color: #21A9E7;
+}
+header .title .context p {
+  font-size: 24px;
+  font-family: "Tilda Sans";
+  color: #000000;
+  font-weight: 300;
+}
+header .title .context .btn {
+  width: 368px;
+  height: 77px;
+  border: 1px solid black;
+  border-radius: 39px;
+  margin: 0 auto;
+}
+header .title .context .btn button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  font-family: "Mulish";
+  color: #363636;
+  font-weight: 400;
+}
+header .title .context .btn button:hover {
+  cursor: pointer;
+}
+header .title #duo {
+  transform: scale(-1, 1);
+  position: relative;
+  top: -150px;
+  right: -79px;
+}
+header #down {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Century Gothic";
+  color: #000000;
+  font-weight: 700;
+}
+
+.main {
+  background: linear-gradient(#9198e5, #FFFFFF);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main #h1 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  font-size: 35px;
+  font-family: "Days One";
+  color: #21A9E7;
+  font-weight: 600;
+}
+.main .block {
+  width: 100%;
+  height: 748px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.main .block .left-side {
+  width: 603px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main .block .left-side .box {
+  width: 275px;
+  height: 103px;
+  position: absolute;
+  top: 120px;
+  right: 47%;
+  text-align: center;
+}
+.main .block .left-side .box .txt {
+  padding: 2em;
+  border-radius: 50%;
+  background: linear-gradient(#e66465, #9198e5);
+  font-size: 16px;
+  font-family: "Tilda Sans";
+  color: #000000;
+  font-weight: 900;
+}
+.main .block .left-side .box .txt span {
+  color: orange;
+}
+.main .block .left-side .box .trg {
+  position: absolute;
+  border: 30px solid transparent;
+  border-top: 30px solid #e66465;
+  z-index: -1;
+  rotate: 144deg;
+  left: -1.5em;
+  top: -1.4em;
+  background: linear-gradient(#e66465, #9198e5);
+}
+.main .block .left-side .btn {
+  width: 458px;
+  height: 112px;
+  margin: 0 auto;
+  position: absolute;
+  left: 15%;
+  z-index: 200;
+}
+.main .block .left-side .btn #load {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 58px;
+  background: linear-gradient(#21A9E7, #B6D2DF, #21A9E7);
+  font-size: 31px;
+  font-family: "Mulish";
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.main .block .right-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.main .block .right-side .cicle {
+  width: 290px;
+  height: 262px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-family: "Tilda Sans";
+  color: #000000;
+  font-weight: 400;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  text-align: center;
+}
+.main .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+.main .grid img {
+  width: 54px;
+  height: 54px;
+  margin: 0.5em;
+}
+.main .grid .item-grid {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  font-size: 27px;
+  font-family: "Tilda Sans";
+  color: #363636;
+  font-weight: 700;
+}
+.main .grid .item-grid span {
+  color: #21A9E7;
+}
+.main .grid button {
+  width: 400px;
+  height: 75px;
+  border-radius: 58px;
+  background: linear-gradient(#21A9E7, #B6D2DF, #21A9E7);
+  font-size: 23px;
+  font-family: "Mulish";
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.main .grid button:hover {
+  cursor: pointer;
+}
+.main .load-price {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  top: 5em;
+}
+.main .load-price img {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+.main .load-price .inner-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Century Gothic";
+}
+.main .load-price .inner-1 h1 {
+  text-align: center;
+  padding: 1em;
+}
+.main .load-price .inner-1 h1:nth-child(2) {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 1em;
+}
+.main .load-price .inner-1 h1:nth-child(3) {
+  font-weight: 400;
+}
+.main .load-price .inner-1 .center-block {
+  width: 1244px;
+  height: 335px;
+  padding: 2em;
+  margin: 3em auto;
+  box-shadow: 0 0 25px #21A9E7;
+  border-radius: 30%;
+  font-size: 26px;
+  font-weight: "Tilda Sans";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .load-price .inner-1 .center-block .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .load-price .inner-1 .center-block p #first {
+  color: orange;
+}
+.main .load-price .inner-1 .center-block p:nth-child(2) {
+  font-size: 40px;
+  text-align: center;
+}
+.main .load-price .inner-1 .center-block button {
+  border: none;
+  width: 300px;
+  height: 75px;
+  position: absolute;
+  border-radius: 58px;
+  background: linear-gradient(#21A9E7, #B6D2DF, #21A9E7);
+  font-size: 23px;
+  font-family: "Mulish";
+  color: #FFFFFF;
+  font-weight: 700;
+  bottom: 2em;
+}
+.main .load-price .inner-1 .center-block button:hover {
+  cursor: pointer;
+}
+
+.form {
+  width: 80%;
+  position: relative;
+  z-index: 100;
+  top: 5em;
+  padding: 2em;
+  margin: 0 auto;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding: 1em;
+  border: none;
+  box-shadow: 0 0 25px #17528C, 0 0 25px #17528C;
+}
+.form input[type=text] {
+  font-size: 2em;
+  font-family: "Mulish";
+}
+.form #quetion {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0.5em;
+  font-size: 3em;
+  box-shadow: 0 0 25px #17528C, 0 0 25px #17528C;
+  font-family: "Mulish";
+}
+.form form input:last-child {
+  width: 35%;
+  height: 3em;
+  cursor: pointer;
+}
+.form form input:last-child {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em auto;
+  border-radius: 58px;
+  font-size: 2em;
+  background: linear-gradient(#21A9E7, #B6D2DF, #21A9E7);
+  font-weight: 600;
+  color: #FFFFFF;
+  font-family: "Mulish";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

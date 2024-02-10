@@ -1,0 +1,184 @@
+header{
+
+    $orange: #FF9100;
+    $dark: #484141;
+    $black: #000000;
+
+    @mixin flex($dir, $h, $v){
+        display: flex;
+        flex-direction: $dir;
+        justify-content: $h;
+        align-items: $v;
+    }
+
+    @mixin font($sz, $fm, $clr, $fw){
+        font-size: $sz;
+        font-family: $fm;
+        color: $clr;
+        font-weight: $fw;
+    }
+
+    width: 100%;
+    background: linear-gradient(#FFFFFF,#9198e5);
+    @include flex(column, start, start);
+    position: relative;
+    overflow: hidden;
+
+    #smoke{
+        position: absolute;
+    }
+
+    .header{
+        width: 100%;
+        @include flex(row, space-between, center);
+        position: absolute;
+        z-index: 100%;
+        padding: 15px 100px;
+
+
+        .logo
+        {
+
+            .name{
+                @include font(40px, 'Century Gothic', $orange, 900);
+                span{
+                    text-decoration: underline;
+                }
+            }
+    
+            .desc{
+                @include font(15px, 'Century Gothic', $black, 500);
+            }
+        }
+    
+    
+        .contact
+        {
+            @include flex(row, center, center);
+            gap: 60px;
+    
+            .net
+            {
+    
+                @include flex(row, center, center);
+                gap: 10px;
+                
+                .telegram, .whatapp
+                {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    @include flex(row, center, center);
+                }
+            }
+    
+    
+            .phone
+            {
+                @include flex(row, center, center);
+                gap: 5px;
+            }
+        }
+    
+        ul
+        {
+            z-index: 100;
+            list-style: none;
+            @include flex(row, center, center);
+            gap: 20px;
+
+            li a
+            {
+                text-decoration: none;
+                @include font(20px, 'Tilda Sans', $dark, 600);
+            }
+    
+        }
+    }
+    .line
+    {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 90px;
+        
+        .hr
+        {
+            width: 90%;
+            height: 100%;
+            background-color: #000000;
+            margin: 0 auto;
+        }
+    }
+
+
+    .title{
+        @include flex(row, space-between, start);
+        
+        position: relative;
+        top: 200px;
+        width: 100%;
+        .context{
+            width: 777px;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            .h-1{
+                @include flex(column, space-between, space-between);
+                @include font(25px, 'Days One', #484141, 400);  
+
+                h1:first-child{
+                    color: #21A9E7;
+                }
+            }
+
+            p{
+                @include font(24px, 'Tilda Sans', #000000, 300);  
+            }
+
+            .btn{
+                width: 368px;
+                height: 77px;
+                border: 1px solid black;
+                border-radius: 39px;
+                margin: 0 auto;
+
+                button{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background-color: transparent;
+                    @include font(22px, 'Mulish', #363636, 400);
+                }
+
+                button:hover{
+                    cursor: pointer;   
+                }
+            }
+
+
+        }
+
+        #duo{
+            transform: scale(-1, 1);
+            position: relative;
+            top: -150px;
+            right: -79px;
+        }
+
+
+    }
+
+    #down{
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        @include font(20px, 'Century Gothic', #000000, 700);
+    }
+
+}
+
+
+
+    

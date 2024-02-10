@@ -1,0 +1,60 @@
+.form{
+    width: 80%;
+    position: relative;
+    z-index: 100;
+    top: 5em;
+    padding: 2em;
+    margin: 0 auto;
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 1em;
+        
+        padding: 1em;
+        border: none;
+        box-shadow: 0 0 25px #17528C, 0 0 25px #17528C;
+
+    }
+
+
+    input[type=text]{
+        font-size: 2em;
+        font-family: 'Mulish';
+    }
+
+    #quetion{
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 2em;
+        padding: 0.5em;
+        font-size: 3em;
+        box-shadow: 0 0 25px #17528C, 0 0 25px #17528C;
+        font-family: 'Mulish';
+    }
+
+      form input:last-child{
+        width: 35%;
+        height: 3em;
+        cursor: pointer;
+        &{
+            display: flex;
+            justify-content: center;
+            margin: 1.5em auto;
+            border-radius: 58px;
+            font-size: 2em;
+            background: linear-gradient(#21A9E7, #B6D2DF, #21A9E7);
+            font-weight: 600;
+            color: #FFFFFF;
+            font-family: 'Mulish';
+        }
+      }
+
+}
